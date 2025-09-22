@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+    <title>Admission & Scholarship Notifications</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700
+ &display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/a
+ ll.min.css"> 
+</head> 
+<body> 
+    <header class="navbar"> 
+        <div class="navbar-left"> 
+            <div class="logo">EduPath</div> 
+            <nav class="main-nav"> 
+                <ul> 
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#">Courses</a></li> 
+                    <li><a href="#">Career Paths</a></li> 
+                    <li><a href="#">Resources</a></li> 
+                    <li><a href="#">Community</a></li> 
+                </ul> 
+            </nav> 
+        </div> 
+        <div class="navbar-right"> 
+            <i class="fas fa-bell notification-bell"></i> 
+            <div class="user-avatar"> 
+                <img src="https://via.placeholder.com/30" alt="User 
+Avatar"> 
+            </div> 
+        </div> 
+    </header> 
+ 
+    <main class="container"> 
+        <section class="header-section"> 
+            <h1>Admission & Scholarship Notifications</h1> 
+            <p>Stay updated with the latest opportunities. Search and 
+filter to find what's relevant for you.</p> 
+        </section> 
+ 
+        <section class="filter-section"> 
+            <div class="filter-row"> 
+                <div class="search-box"> 
+                    <i class="fas fa-search"></i> 
+                    <input type="text" placeholder="Search by keyword 
+(e.g., college, scholarship type)"> 
+                </div> 
+                <div class="date-picker-box"> 
+                    <label for="date-input">Date</label> 
+                    <input type="text" id="date-input" 
+placeholder="mm/dd/yyyy"> 
+                </div> 
+                <div class="select-box"> 
+                    <label for="scholarship-status">Scholarship 
+Status</label> 
+                    <select id="scholarship-status"> 
+                        <option>All</option> 
+                        <option>Open</option> 
+                        <option>Closed</option> 
+                    </select> 
+                </div> 
+                <div class="select-box"> 
+                    <label for="admission-type">Admission Type</label> 
+                    <select id="admission-type"> 
+                        <option>All</option> 
+                        <option>Undergraduate</option> 
+                        <option>Postgraduate</option> 
+                    </select> 
+                </div> 
+                <button class="filter-button"> 
+                    <i class="fas fa-filter"></i> Filter 
+                </button> 
+            </div> 
+        </section> 
+ 
+        <div class="content-tabs"> 
+            <div class="tab-list"> 
+                <button class="tab-button active" 
+data-tab="list-view">List View</button> 
+                <button class="tab-button" 
+data-tab="calendar-view">Calendar View</button> 
+            </div> 
+            <div class="tab-content"> 
+                <div id="list-view" class="tab-pane active"> 
+                    <div class="notifications-list"> 
+                        <div class="notification-group"> 
+                            <h4>Today</h4> 
+                            <div class="notification-item"> 
+                                <i class="fas fa-graduation-cap 
+icon"></i> 
+                                <div class="notification-details"> 
+                                    <h3>Scholarship for Undergraduate 
+Studies</h3> 
+                                    <p class="source-date">University 
+of Kashmir | Deadline: July 15, 2024</p> 
+                                    <div class="tags"> 
+                                        <span class="tag 
+open">Open</span> 
+                                        <span class="tag 
+type">Undergraduate</span> 
+                                    </div> 
+                                </div> 
+                                <i class="fas fa-circle 
+status-dot"></i> 
+                            </div> 
+                            <div class="notification-item"> 
+                                <i class="fas fa-university icon"></i> 
+                                <div class="notification-details"> 
+                                    <h3>Admission Open for Engineering 
+Programs</h3> 
+                                    <p class="source-date">NIT 
+Srinagar | Deadline: August 30, 2024</p> 
+                                    <div class="tags"> 
+                                        <span class="tag 
+open">Open</span> 
+                                        <span class="tag 
+type">Undergraduate</span> 
+                                    </div> 
+                                </div> 
+                                <i class="fas fa-circle 
+status-dot"></i> 
+                            </div> 
+                        </div> 
+ 
+                        <div class="notification-group"> 
+                            <h4>Yesterday</h4> 
+                            <div class="notification-item"> 
+                                <i class="fas fa-graduation-cap 
+icon"></i> 
+                                <div class="notification-details"> 
+                                    <h3>Merit-based Scholarship for 
+PG</h3> 
+                                    <p class="source-date">Central 
+University of Jammu | Deadline: June 20, 2024</p> 
+                                    <div class="tags"> 
+                                        <span class="tag 
+closed">Closed</span> 
+                                        <span class="tag 
+type">Postgraduate</span> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            <div class="notification-item"> 
+                                <i class="fas fa-chalkboard-teacher 
+icon"></i> 
+                                <div class="notification-details"> 
+                                    <h3>Workshop on Career 
+Counseling</h3> 
+                                    <p class="source-date">SMVDU | 
+Deadline: July 5, 2024</p> 
+                                    <div class="tags"> 
+                                        <span class="tag 
+event">Event</span> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+ 
+                <div id="calendar-view" class="tab-pane"> 
+                    <div class="calendar-container"> 
+                        <div class="calendar-header"> 
+                            <i class="fas fa-chevron-left 
+calendar-nav"></i> 
+                            <h2>July 2024</h2> 
+                            <i class="fas fa-chevron-right 
+calendar-nav"></i> 
+                        </div> 
+                        <div class="calendar-grid"> 
+                            <div class="day-name">S</div> 
+                            <div class="day-name">M</div> 
+                            <div class="day-name">T</div> 
+                            <div class="day-name">W</div> 
+                            <div class="day-name">T</div> 
+                            <div class="day-name">F</div> 
+                            <div class="day-name">S</div> 
+                            <div class="day-cell inactive">30</div> 
+                            <div class="day-cell inactive">1</div> 
+                            <div class="day-cell inactive">2</div> 
+                            <div class="day-cell inactive">3</div> 
+                            <div class="day-cell inactive">4</div> 
+                            <div class="day-cell inactive">5</div> 
+                            <div class="day-cell inactive">6</div> 
+                            <div class="day-cell">7</div> 
+                            <div class="day-cell">8</div> 
+                            <div class="day-cell">9</div> 
+                            <div class="day-cell">10</div> 
+                            <div class="day-cell">11</div> 
+                            <div class="day-cell">12</div> 
+                            <div class="day-cell">13</div> 
+                            <div class="day-cell event-day 
+active">14</div> 
+                            <div class="day-cell event-day">15</div> 
+                            <div class="day-cell">16</div> 
+                            <div class="day-cell">17</div> 
+                            <div class="day-cell">18</div> 
+                            <div class="day-cell">19</div> 
+                            <div class="day-cell">20</div> 
+                            <div class="day-cell">21</div> 
+                            <div class="day-cell">22</div> 
+                            <div class="day-cell">23</div> 
+                            <div class="day-cell">24</div> 
+                            <div class="day-cell">25</div> 
+                            <div class="day-cell">26</div> 
+                            <div class="day-cell">27</div> 
+                            <div class="day-cell">28</div> 
+                            <div class="day-cell">29</div> 
+                            <div class="day-cell">30</div> 
+                            <div class="day-cell">31</div> 
+                        </div> 
+                        <div class="calendar-details"> 
+                            <h3>Deadlines on July 15:</h3> 
+                            <div class="deadline-item"> 
+                                <i class="fas fa-circle 
+deadline-dot"></i> 
+                                <div class="deadline-text"> 
+                                    <p>Scholarship for Undergraduate 
+Studies</p> 
+                                    <span>University of Kashmir</span> 
+                                </div> 
+                            </div> 
+                            <a href="#" class="reminder-link">Set 
+reminder</a> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </main> 
+ 
+    <footer> 
+        <p>© 2024 EduPath. All rights reserved.</p> 
+    </footer> 
+    <script src="script.js"></script> 
+</body> 
+</html>

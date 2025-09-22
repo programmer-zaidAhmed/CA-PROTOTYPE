@@ -1,0 +1,337 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+body { 
+    font-family: 'Poppins', sans-serif; /* Use a modern font from 
+Google Fonts */ 
+    background-color: #f4f7f9; 
+    color: #333; 
+} 
+ 
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+} 
+ 
+/* Header/Navbar Styles */ 
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.logo { 
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    color: #1a2a4b; 
+} 
+ 
+.navbar ul { 
+    list-style: none; 
+    display: flex; 
+} 
+ 
+.navbar ul li { 
+    margin-left: 30px; 
+} 
+ 
+.navbar ul li a { 
+    text-decoration: none; 
+    color: #555; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+} 
+ 
+.navbar ul li a:hover { 
+    color: #007bff; 
+} 
+ 
+.sign-out-btn { 
+    text-decoration: none; 
+    color: #007bff; 
+    font-weight: 500; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    border: 1px solid #007bff; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+ 
+.sign-out-btn:hover { 
+    background-color: #007bff; 
+    color: #fff; 
+} 
+ 
+/* Hero Section */ 
+.hero-section { 
+    background: linear-gradient(rgba(26, 42, 75, 0.8), rgba(26, 42, 
+75, 0.8)), url('https://via.placeholder.com/1500x800') no-repeat 
+center center/cover; /* Replace with your hero image */ 
+    color: #fff; 
+    text-align: center; 
+    padding: 100px 20px; 
+} 
+ 
+.hero-section h1 { 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+} 
+ 
+.hero-section p { 
+    font-size: 1.2rem; 
+    max-width: 600px; 
+    margin: 0 auto 30px; 
+} 
+ 
+.explore-btn { 
+    padding: 12px 25px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+ 
+.explore-btn:hover { 
+    background-color: #0056b3; 
+} 
+ 
+/* Quiz Cards Section */ 
+.quizzes-section { 
+    padding: 50px 20px; 
+    text-align: center; 
+} 
+ 
+.quizzes-section h2 { 
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+} 
+ 
+.quiz-cards-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+} 
+ 
+.quiz-card { 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 350px; 
+    overflow: hidden; 
+    text-align: left; 
+    transition: transform 0.3s ease; 
+} 
+ 
+.quiz-card:hover { 
+    transform: translateY(-10px); 
+} 
+ 
+.quiz-card img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+} 
+ 
+.card-details { 
+    padding: 20px; 
+} 
+ 
+.title-row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px; 
+} 
+ 
+.title-row h4 { 
+    font-size: 1.2rem; 
+    color: #1a2a4b; 
+} 
+ 
+.time-difficulty { 
+    font-size: 0.9rem; 
+    color: #666; 
+} 
+ 
+.card-details p { 
+    font-size: 0.9rem; 
+    color: #777; 
+    margin-bottom: 15px; 
+} 
+ 
+.start-quiz-btn { 
+    background-color: transparent; 
+    border: 1px solid #007bff; 
+    color: #007bff; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+ 
+.start-quiz-btn:hover { 
+    background-color: #007bff; 
+    color: #fff; 
+} 
+ 
+/* Testimonials Section */ 
+.testimonials-section { 
+    padding: 50px 20px; 
+    text-align: center; 
+} 
+ 
+.testimonials-section h2 { 
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+} 
+ 
+.testimonial-cards-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+} 
+ 
+.testimonial-card { 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 30px; 
+    width: 350px; 
+    text-align: left; 
+    position: relative; 
+} 
+ 
+.quote-icon { 
+    font-size: 3rem; 
+    font-weight: bold; 
+    color: #e0e0e0; 
+    position: absolute; 
+    top: 10px; 
+    left: 20px; 
+} 
+ 
+.testimonial-card p { 
+    margin-top: 20px; 
+    font-style: italic; 
+    color: #555; 
+    position: relative; 
+    z-index: 1; 
+} 
+ 
+.student-info { 
+    margin-top: 20px; 
+    font-weight: bold; 
+    color: #333; 
+} 
+ 
+.student-class { 
+    display: block; 
+    font-weight: normal; 
+    font-size: 0.9rem; 
+    color: #777; 
+    margin-top: 5px; 
+} 
+ 
+/* Footer Section */ 
+.site-footer { 
+    background-color: #1a2a4b; 
+    color: #fff; 
+    padding: 50px 20px 20px; 
+} 
+ 
+.footer-columns { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto 30px; 
+} 
+ 
+.footer-col h3 { 
+    font-size: 1.2rem; 
+    margin-bottom: 15px; 
+    color: #fff; 
+} 
+ 
+.footer-col ul { 
+    list-style: none; 
+} 
+ 
+.footer-col ul li { 
+    margin-bottom: 10px; 
+} 
+ 
+.footer-col ul li a { 
+    text-decoration: none; 
+    color: #bbb; 
+    transition: color 0.3s ease; 
+} 
+ 
+.footer-col ul li a:hover { 
+    color: #007bff; 
+} 
+ 
+.social-icons a { 
+    color: #fff; 
+    font-size: 1.5rem; 
+    margin-right: 15px; 
+    transition: color 0.3s ease; 
+} 
+ 
+.social-icons a:hover { 
+    color: #007bff; 
+} 
+ 
+.copyright { 
+    text-align: center; 
+    margin-top: 20px; 
+    padding-top: 20px; 
+    border-top: 1px solid #334466; 
+    color: #888; 
+    font-size: 0.9rem; 
+} 
+ 
+/* Responsive Design */ 
+@media (max-width: 768px) { 
+    .navbar { 
+        flex-direction: column; 
+    } 
+ 
+    .navbar nav ul { 
+        margin-top: 15px; 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+ 
+    .navbar ul li { 
+        margin: 10px 0; 
+    } 
+ 
+    .hero-section h1 { 
+        font-size: 2.5rem; 
+    } 
+ 
+    .quiz-cards-container, 
+    .testimonial-cards-container { 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+ 
+    .footer-columns { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    } 
+} 
