@@ -10,8 +10,133 @@ body {
     flex-direction: column; 
     align-items: center; 
 } 
- 
+
+
 .navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.logo { 
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    color: #004d99; 
+} 
+ 
+.navbar ul { 
+    list-style: none; 
+    display: flex; 
+} 
+ 
+.navbar ul li { 
+    margin-left: 30px; 
+} 
+ 
+.navbar ul li a { 
+    text-decoration: none; 
+    color: #555; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+} 
+ 
+.navbar ul li a:hover { 
+    color: #007bff; 
+} 
+ 
+.sign-out-btn { 
+    text-decoration: none; 
+    color: #007bff; 
+    font-weight: 500; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    border: 1px solid #007bff; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+ 
+.sign-out-btn:hover { 
+    background-color: #007bff; 
+    color: #fff; 
+} 
+
+
+
+/* edited by me */
+
+.btn{
+    border-radius: 6px;
+    height: 60px;
+    border: none;
+    background: #e2eefb;
+    color: black;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.btn:hover:not([disabled]){
+    background: #222222;
+    color: #ffffff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}
+
+
+
+/* end here */
+
+
+
+
+
+/* .navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.logo { 
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    color: #004d99; 
+}  */
+ 
+/* .navbar ul { 
+    list-style: none; 
+    display: flex; 
+} 
+ 
+.navbar ul li { 
+    margin-left: 30px; 
+} 
+ 
+.navbar ul li a { 
+    text-decoration: none; 
+    color: #555; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+} 
+ 
+.navbar ul li a:hover { 
+    color: #007bff; 
+}  */
+
+ 
+/* .navbar { 
     width: 100%; 
     padding: 20px 50px; 
     background-color: #ffffff; 
@@ -36,11 +161,11 @@ body {
     margin: 0 15px; 
     font-weight: 500; 
     transition: color 0.3s; 
-} 
+}  */
  
-.navbar nav a:hover { 
+/* .navbar nav a:hover { 
     color: #007bff; 
-} 
+}  */
  
 .user-icon i { 
     font-size: 24px; 
@@ -118,8 +243,7 @@ body {
     padding: 25px; 
     text-align: center; 
     cursor: pointer; 
-    transition: background-color 0.3s, border-color 0.3s, box-shadow 
-0.3s; 
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; 
 } 
  
 .option-card:hover { 

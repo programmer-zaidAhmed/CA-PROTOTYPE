@@ -29,8 +29,60 @@ a {
     text-decoration: none; 
     color: var(--primary-color); 
 } 
- 
+
+
 .navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.logo { 
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    color: #004d99; 
+} 
+ 
+.navbar ul { 
+    list-style: none; 
+    display: flex; 
+} 
+ 
+.navbar ul li { 
+    margin-left: 30px; 
+} 
+ 
+.navbar ul li a { 
+    text-decoration: none; 
+    color: #555; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+} 
+ 
+.navbar ul li a:hover { 
+    color: #007bff; 
+} 
+
+.sign-out-btn { 
+    text-decoration: none; 
+    color: #007bff; 
+    font-weight: 500; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    border: 1px solid #007bff; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+ 
+.sign-out-btn:hover { 
+    background-color: #007bff; 
+    color: #fff; 
+} 
+
+ 
+/* .navbar { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -49,7 +101,7 @@ a {
     font-weight: 700; 
     color: var(--text-color); 
     margin-right: 30px; 
-} 
+}  */
  
 .main-nav ul { 
     list-style: none; 
@@ -65,11 +117,11 @@ a {
     font-weight: 500; 
 } 
  
-.navbar-right { 
+/* .navbar-right { 
     display: flex; 
     align-items: center; 
     gap: 20px; 
-} 
+}  */
  
 .notification-bell { 
     font-size: 20px; 

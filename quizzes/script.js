@@ -4,11 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelectorAll('.start-quiz-btn'); 
  
     // Add a click event listener to each button 
-    startQuizButtons.forEach(button => { 
-        button.addEventListener('click', () => { 
-            alert('Redirecting to quiz page!'); // Replace with actual redirection logic 
-        }); 
-    }); 
+
+    
+    // startQuizButtons.forEach(button => { 
+    //     button.addEventListener('click', () => { 
+    //         alert('Redirecting to quiz page!'); // Replace with actual redirection logic 
+    //     }); 
+    // }); 
  
     // Select the 'Explore Quizzes' button 
     const exploreQuizzesBtn = document.querySelector('.explore-btn'); 

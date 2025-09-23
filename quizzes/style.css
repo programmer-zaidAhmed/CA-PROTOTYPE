@@ -30,7 +30,7 @@ Google Fonts */
 .logo { 
     font-weight: bold; 
     font-size: 1.5rem; 
-    color: #1a2a4b; 
+    color: #004d99; 
 } 
  
 .navbar ul { 
@@ -184,6 +184,10 @@ center center/cover; /* Replace with your hero image */
     background-color: #007bff; 
     color: #fff; 
 } 
+
+.start-quiz-btn a{
+    text-decoration: none;
+}
  
 /* Testimonials Section */ 
 .testimonials-section { 

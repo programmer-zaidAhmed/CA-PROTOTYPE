@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Career Advisor</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .form-container {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .tab-active {
+            border-bottom: 3px solid #3b82f6;
+        }
+        .input-field:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="flex flex-col md:flex-row h-screen">
+        <!-- Left Side -->
+        <div class="w-full md:w-3/5 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center p-10 text-white">
+            <div class="max-w-md" data-aos="fade-right">
+                <img src="http://static.photos/education/1024x576/1" alt="Career Growth" class="w-full rounded-lg mb-8">
+                <h1 class="text-4xl font-bold mb-4">Your Future Starts Here!</h1>
+                <p class="text-lg opacity-90">Join our Career Advisor platform and unlock quizzes, sponsorships, and top colleges designed especially for Jammu & Kashmir students.</p>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="w-full md:w-2/5 flex items-center justify-center p-8 bg-white">
+            <div class="w-full max-w-md form-container rounded-xl p-8" data-aos="fade-left">
+                <!-- Tabs -->
+                <div class="flex mb-8 border-b">
+                    <button id="login-tab" class="tab-active py-2 px-4 font-medium text-blue-500">Login</button>
+                    <button id="signup-tab" class="py-2 px-4 font-medium text-gray-500">Sign Up</button>
+                </div>
+
+                <!-- Login Form -->
+                <div id="login-form">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Username / Phone Number</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg border input-field focus:outline-none">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Password</label>
+                        <div class="relative">
+                            <input type="password" class="w-full px-4 py-2 rounded-lg border input-field focus:outline-none">
+                            <button class="absolute right-3 top-2 text-gray-500">
+                                <i data-feather="eye"></i>
+                            </button>
+                        </div>
+                        <a href="#" class="text-sm text-blue-500 hover:underline mt-1 block">Forgot Password?</a>
+                    </div>
+                    <a href="http://127.0.0.1:3000/home/index.html">
+                    <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200 mb-4">
+                        Login
+                    </button>
+                </a>
+                    <div class="text-center text-sm text-gray-600 mb-4">or login with</div>
+                    <div class="flex justify-center space-x-4 mb-6">
+                        <button class="bg-white border rounded-full p-2 hover:bg-gray-50">
+                            <i data-feather="facebook" class="text-blue-600"></i>
+                        </button>
+                        <button class="bg-white border rounded-full p-2 hover:bg-gray-50">
+                            <i data-feather="mail" class="text-red-500"></i>
+                        </button>
+                    </div>
+                    <p class="text-center text-gray-600">New here? <a href="#" id="switch-to-signup" class="text-blue-500 hover:underline">Create an account</a></p>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div id="signup-form" class="hidden">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Full Name</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg border input-field focus:outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Phone Number</label>
+                        <div class="flex">
+                            <span class="inline-flex items-center px-3 rounded-l-lg border border-r-0 bg-gray-50 text-gray-500">+91</span>
+                            <input type="tel" class="w-full px-4 py-2 rounded-r-lg border input-field focus:outline-none">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Username</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg border input-field focus:outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Password</label>
+                        <div class="relative">
+                            <input type="password" class="w-full px-4 py-2 rounded-lg border input-field focus:outline-none">
+                            <button class="absolute right-3 top-2 text-gray-500">
+                                <i data-feather="eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Confirm Password</label>
+                        <input type="password" class="w-full px-4 py-2 rounded-lg border input-field focus:outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">District</label>
+                        <select class="w-full px-4 py-2 rounded-lg border input-field focus:outline-none">
+                            <option value="">Select District</option>
+                            <option>Srinagar</option>
+                            <option>Jammu</option>
+                            <option>Anantnag</option>
+                            <option>Baramulla</option>
+                            <option>Budgam</option>
+                            <option>Pulwama</option>
+                            <option>Kupwara</option>
+                            <option>Rajouri</option>
+                            <option>Poonch</option>
+                            <option>Doda</option>
+                            <option>Kishtwar</option>
+                            <option>Udhampur</option>
+                            <option>Reasi</option>
+                            <option>Kathua</option>
+                            <option>Samba</option>
+                            <option>Ganderbal</option>
+                            <option>Bandipora</option>
+                            <option>Kulgam</option>
+                            <option>Shopian</option>
+                            <option>Ramban</option>
+                        </select>
+                    </div>
+                    <div class="mb-6 flex items-center">
+                        <input type="checkbox" id="terms" class="mr-2">
+                        <label for="terms" class="text-gray-700 text-sm">I agree to Terms & Conditions</label>
+                    </div>
+                    <a href="http://127.0.0.1:3000/home/index.html"><button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200 mb-4">
+                        Create Account
+                    </button></a>
+                    <p class="text-center text-gray-600">Already have an account? <a href="#" id="switch-to-login" class="text-blue-500 hover:underline">Login here</a></p>
+                </div>
+
+                <div class="mt-8 pt-4 border-t text-center text-sm text-gray-500">
+                    © 2025 Career Advisor – Specially for Jammu & Kashmir Students
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+        feather.replace();
+        
+        // Tab switching functionality
+        document.getElementById('switch-to-signup').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('login-form').classList.add('hidden');
+            document.getElementById('signup-form').classList.remove('hidden');
+            document.getElementById('login-tab').classList.remove('tab-active');
+            document.getElementById('login-tab').classList.add('text-gray-500');
+            document.getElementById('signup-tab').classList.add('tab-active');
+            document.getElementById('signup-tab').classList.remove('text-gray-500');
+        });
+
+        document.getElementById('switch-to-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('signup-form').classList.add('hidden');
+            document.getElementById('login-form').classList.remove('hidden');
+            document.getElementById('signup-tab').classList.remove('tab-active');
+            document.getElementById('signup-tab').classList.add('text-gray-500');
+            document.getElementById('login-tab').classList.add('tab-active');
+            document.getElementById('login-tab').classList.remove('text-gray-500');
+        });
+
+        document.getElementById('login-tab').addEventListener('click', function() {
+            document.getElementById('signup-form').classList.add('hidden');
+            document.getElementById('login-form').classList.remove('hidden');
+            document.getElementById('signup-tab').classList.remove('tab-active');
+            document.getElementById('signup-tab').classList.add('text-gray-500');
+            this.classList.add('tab-active');
+            this.classList.remove('text-gray-500');
+        });
+
+        document.getElementById('signup-tab').addEventListener('click', function() {
+            document.getElementById('login-form').classList.add('hidden');
+            document.getElementById('signup-form').classList.remove('hidden');
+            document.getElementById('login-tab').classList.remove('tab-active');
+            document.getElementById('login-tab').classList.add('text-gray-500');
+            this.classList.add('tab-active');
+            this.classList.remove('text-gray-500');
+        });
+    </script>
+</body>
+</html>
