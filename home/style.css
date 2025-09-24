@@ -46,7 +46,22 @@ h2 {
 .cta-button:hover { 
     background-color: #003366; 
 } 
- 
+#aibuton {
+height: 50px;
+width: 120px;
+border: black solid;
+border-radius: 15px;
+background-color: #007bff;
+display: flex;
+position:fixed;
+
+left: 1380px; top: 600px;
+}
+ #aiclick{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+ }
 /* Header */ 
 .navbar { 
     display: flex; 
